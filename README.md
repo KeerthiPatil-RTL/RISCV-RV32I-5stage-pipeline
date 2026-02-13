@@ -41,8 +41,7 @@ I developed a custom SystemVerilog testbench to verify:
 • Register file updates  
 • Memory read/write behavior  
 • Branch decisions and PC redirection  
-Waveform debugging was performed in ModelSim to validate full instruction execution flow.  
-Assembly programs executed successfully, confirming correct CPU behavior.  
+Waveform debugging was performed in ModelSim to validate full instruction execution flow.Assembly programs executed successfully, confirming correct CPU behavior.     
 
 # Technical Highlights
 • Clean modular RTL architecture  
