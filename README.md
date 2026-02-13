@@ -6,7 +6,8 @@
 ## Overview
 I designed and implemented a fully functional RV32I RISC-V single-cycle processor from scratch in SystemVerilog. This processor fetches, decodes, and executes real RISC-V instructions and successfully runs assembly programs such as Fibonacci, Maximum Finder, and Bubble Sort. The project demonstrates end-to-end CPU design at the RTL level - from instruction decoding to datapath integration and waveform-level debugging.
 
-## Microarchitecture
+## Microarchitecture   
+
 The processor follows a classic single-cycle architecture where each instruction completes in one clock cycle.  
 <img width="1058" height="428" alt="pipeline" src="https://github.com/user-attachments/assets/ab226992-3aa3-49a5-bc88-21a33afd2687" />   
 
