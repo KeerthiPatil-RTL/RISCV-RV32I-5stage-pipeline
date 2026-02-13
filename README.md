@@ -1,5 +1,4 @@
-# RISC-V RV32I Single-Cycle Processor
-## SystemVerilog RTL Implementation
+# RISC-V RV32I Single-Cycle Processor - SystemVerilog RTL Implementation
 
 ## Architecture Overview
 ![RISCV ARCHITECTURE](https://github.com/user-attachments/assets/f9a596f0-9a32-4406-8403-595ba16ff130)
