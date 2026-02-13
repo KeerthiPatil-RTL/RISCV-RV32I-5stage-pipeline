@@ -13,48 +13,48 @@ The processor follows a classic single-cycle architecture where each instruction
 
 
 # Datapath Blocks Implemented
-• Program Counter with branch/jump update logic
-• Instruction Memory
-• Control Unit (opcode, funct3, funct7 decoding)
-• 32 × 32 Register File
-• Immediate Generator
-• ALU (Arithmetic, Logical, Shift operations)
-• Branch Comparator
-• Data Memory Interface
-• Writeback Multiplexer
-• Top-level CPU integration
-All modules were developed independently and integrated into a complete CPU.
+• Program Counter with branch/jump update logic  
+• Instruction Memory  
+• Control Unit (opcode, funct3, funct7 decoding)  
+• 32 × 32 Register File  
+• Immediate Generator  
+• ALU (Arithmetic, Logical, Shift operations)  
+• Branch Comparator  
+• Data Memory Interface  
+• Writeback Multiplexer  
+• Top-level CPU integration  
+All modules were developed independently and integrated into a complete CPU.  
 
 # Instruction Set Support (RV32I)  
 ![ISA](https://github.com/user-attachments/assets/169ee185-f026-4bfe-8b43-962e513d8f94)   
-• R-Type: ADD, SUB, AND, OR, XOR, SLL, SRL
-• I-Type: ADDI, Logical Immediate, Loads
-• S-Type: SW
-• B-Type: BEQ, BNE
-• J-Type: JAL
-Control logic generates correct signals for ALU operation, memory access, register writeback, and PC updates.
+• R-Type: ADD, SUB, AND, OR, XOR, SLL, SRL   
+• I-Type: ADDI, Logical Immediate, Loads   
+• S-Type: SW  
+• B-Type: BEQ, BNE  
+• J-Type: JAL  
+Control logic generates correct signals for ALU operation, memory access, register writeback, and PC updates.  
 
 # Verification Strategy
-I developed a custom SystemVerilog testbench to verify:
-• Instruction decoding correctness
-• ALU functionality
-• Register file updates
-• Memory read/write behavior
-• Branch decisions and PC redirection
-Waveform debugging was performed in ModelSim to validate full instruction execution flow.
-Assembly programs executed successfully, confirming correct CPU behavior.
+I developed a custom SystemVerilog testbench to verify:  
+• Instruction decoding correctness  
+• ALU functionality  
+• Register file updates  
+• Memory read/write behavior  
+• Branch decisions and PC redirection  
+Waveform debugging was performed in ModelSim to validate full instruction execution flow.  
+Assembly programs executed successfully, confirming correct CPU behavior.  
 
 # Technical Highlights
-• Clean modular RTL architecture
-• Explicit separation of datapath and control
-• Full ISA-level instruction decoding
-• Deterministic single-cycle execution
-• CPU-level integration and debug
-• Strong alignment with RTL design and microarchitecture roles
+• Clean modular RTL architecture  
+• Explicit separation of datapath and control  
+• Full ISA-level instruction decoding  
+• Deterministic single-cycle execution  
+• CPU-level integration and debug   
+• Strong alignment with RTL design and microarchitecture roles  
 
 # Tools
-• SystemVerilog
-• ModelSim
-• RISC-V Assembly
+• SystemVerilog  
+• ModelSim  
+• RISC-V Assembly  
 
 
