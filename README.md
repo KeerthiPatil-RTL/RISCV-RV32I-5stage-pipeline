@@ -14,7 +14,7 @@ The processor follows a classic single-cycle architecture where each instruction
 
 ## Microarchitecture Blocks Implemented  
 ### Instruction Memory  
- *RTL Module**  <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.sv">instruction_memory.sv </a>    
+**RTL Module**  <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.sv">instruction_memory.sv </a>    
 **Block Diagram** <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_BLOCK.png"> instruction_memory_block </a>    
 **Internal Architecture** <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_UNIT.png"> instruction_memory_unit </a>
 ### Instruction Fetch            
