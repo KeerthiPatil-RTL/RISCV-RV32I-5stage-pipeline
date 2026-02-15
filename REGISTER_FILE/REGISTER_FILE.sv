@@ -21,9 +21,8 @@ regs[rd_addr] <= wr_data;
 end  
 end  
 
-assign rs1_data = regs[rs1_data];
-assign rs2_data = regs[rs2_data];
-
+assign rs1_data = regs[rs1_addr];
+assign rs2_data = regs[rs2_addr];
 endmodule
 
 
