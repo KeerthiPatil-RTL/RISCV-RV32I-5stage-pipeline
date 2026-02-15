@@ -32,6 +32,13 @@ RTL Module <a href = "DECODE/DECODE.sv"> Decode.sv </a>
 Block Diagram <a href = "DECODE/DECODE_STAGE_BLOCK.png"> Decode_block </a>       
 Internal Architecture <a href = "DECODE/DECODE_BLOCK_UNIT.png"> Decode_unit </a>          
 
+------------------------------------------------------------------------------------------------------------------   
+
+### REGISTERFILE             
+RTL Module <a href = "REGISTER_FILE/REGISTER_FILE.sv"> Register_file.sv </a>        
+Block Diagram <a href = "REGISTER_FILE/REGISTER_FILE.png"> Register_file_block </a>       
+Internal Architecture <a href = "REGISTER_FILE/REGISTER_FILE_UNIT.png"> Register_file_unit </a>          
+
 
 - Control Unit (opcode, funct3, funct7 decoding)
 32 × 32 Register File      
