@@ -23,12 +23,20 @@ Internal Architecture <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_UNIT.png"
 ### Instruction Fetch            
 RTL Module <a href = "FETCH/FETCH.sv"> fetch.sv </a>        
 Block Diagram <a href = "FETCH/FETCH_BLOCK.png"> fetch_block </a>       
-Internal Architecture <a href = "FETCH/FETCH_UNIT.png"> fetch_unit </a>     
-              
+Internal Architecture <a href = "FETCH/FETCH_UNIT.png"> fetch_unit </a>       
+
+------------------------------------------------------------------------------------------------------------------   
+
+### DECODE             
+RTL Module <a href = "DECODE/DECODE.sv"> Decode.sv </a>        
+Block Diagram <a href = "DECODE/DECODE_STAGE_BLOCK.png"> Decode_block </a>       
+Internal Architecture <a href = "DECODE/DECODE_BLOCK_UNIT.png"> Decode_unit </a>          
+
+
 - Control Unit (opcode, funct3, funct7 decoding)
 32 × 32 Register File      
 - Immediate Generator
-- ALU (Arithmetic, Logical, Shift operations)
+- ALU (Arithmetic, Logical, Shift operations)   
 - Branch Comparator
 - Data Memory Interface
 - Writeback Multiplexer
