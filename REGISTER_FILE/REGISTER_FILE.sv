@@ -1,11 +1,12 @@
-module Register_file(
+`timescale 1ns / 1ps
+module register_file(
 input logic clk,reset_n,
 input logic rf_wn_en,
 input logic [4:0]rs1_addr,
 input logic [4:0]rs2_addr,
 input logic [4:0]rd_addr,
 input logic [31:0] wr_data,
-output logic [31:0]rs1_data,
+output logic [31:0]rs1_data,   
 output logic [31:0]rs2_data);
 
 logic [31:0] regs [0:31];
@@ -23,8 +24,8 @@ end
 
 assign rs1_data = regs[rs1_addr];
 assign rs2_data = regs[rs2_addr];
-endmodule
 
+endmodule
 
 
 
