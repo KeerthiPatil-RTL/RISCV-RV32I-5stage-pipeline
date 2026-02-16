@@ -1,6 +1,7 @@
+`timescale 1ns / 1ps
 import risc_pkg::*;
 
-module DECODE(
+module decode(
 input logic [31:0] instruction,
 
 output logic [6:0]opcode,
@@ -62,7 +63,6 @@ assign immediate = r_type ? 32'd0 :
                    u_type ? imm_u_type :
                            imm_j_type ;
 endmodule
-
 
 
 
