@@ -63,9 +63,9 @@ Internal Architecture <a href = "BRANCH_CONTROL/BRANCH_CONTROL_UNIT.png"> Branch
 ------------------------------------------------------------------------------------------------------------------   
 
 ### Control Unit
-RTL Module <a href = "BRANCH_CONTROL/BRANCH_CONTROL.sv"> Branch_Control.sv </a>        
-Block Diagram <a href = "BRANCH_CONTROL/BRANCH_CONTROL_BLOCK.png"> Branch_Control_block </a>       
-Internal Architecture <a href = "BRANCH_CONTROL/BRANCH_CONTROL_UNIT.png"> Branch_Control_unit </a>    
+RTL Module <a href = "CONTROL_UNIT/CONTROL_UNIT.sv"> Control_Unit.sv </a>        
+Block Diagram <a href = "CONTROL_UNIT/CONTROL_BLOCK.png"> Control_block </a>       
+Internal Architecture <a href = "CONTROL_UNIT/CONTROL_UNIT.png"> Control_unit </a>    
 
  ------------------------------------------------------------------------------------------------------------------
   
