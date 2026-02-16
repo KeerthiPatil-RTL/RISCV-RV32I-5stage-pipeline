@@ -1,5 +1,6 @@
+`timescale 1ns / 1ps
 import risc_pkg::*;
-module Branch_control(
+module branch_control(
 input logic [2:0]funct3,
 input logic is_b_type,
 input logic [31:0] opr_a,
