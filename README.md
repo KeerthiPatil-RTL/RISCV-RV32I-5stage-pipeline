@@ -60,15 +60,15 @@ RTL Module <a href = "BRANCH_CONTROL/BRANCH_CONTROL.sv"> Branch_Control.sv </a>
 Block Diagram <a href = "BRANCH_CONTROL/BRANCH_CONTROL_BLOCK.png"> Branch_Control_block </a>       
 Internal Architecture <a href = "BRANCH_CONTROL/BRANCH_CONTROL_UNIT.png"> Branch_Control_unit </a>    
 
+------------------------------------------------------------------------------------------------------------------   
+
+### Control Unit
+RTL Module <a href = "BRANCH_CONTROL/BRANCH_CONTROL.sv"> Branch_Control.sv </a>        
+Block Diagram <a href = "BRANCH_CONTROL/BRANCH_CONTROL_BLOCK.png"> Branch_Control_block </a>       
+Internal Architecture <a href = "BRANCH_CONTROL/BRANCH_CONTROL_UNIT.png"> Branch_Control_unit </a>    
+
+ ------------------------------------------------------------------------------------------------------------------
   
-- Control Unit (opcode, funct3, funct7 decoding)
-32 × 32 Register File      
-- Immediate Generator
-- ALU (Arithmetic, Logical, Shift operations)     
-- Branch Comparator
-- Data Memory Interface
-- Writeback Multiplexer
-- Top-level CPU integration
 All modules were developed independently and integrated into a complete CPU.  
 
 ## Instruction Set Support (RV32I)  
