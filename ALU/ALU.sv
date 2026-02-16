@@ -1,30 +1,34 @@
 `timescale 1ns / 1ps
 import risc_pkg::*;
-module branch_control(
-input logic [2:0]funct3,
-input logic is_b_type,
-input logic [31:0] opr_a,
-input logic [31:0] opr_b,
-output logic branch_taken
-);
+module alu (input logic [31:0]alu_a,
+input logic [31:0]alu_b,
+input alu_op_t alu_op,
+output logic [31:0]alu_res);
 
-logic signed [31:0] a_signed,b_signed;
-assign a_signed = opr_a;
-assign b_signed = opr_b;
-logic taken;
+logic signed [31:0] signed_a;
+logic signed [31:0] signed_b;
+   
+assign signed_a = alu_a;
+assign signed_b = alu_b;
 
 always_comb begin
-taken = 1'b0;
+alu_res = 32'd0;
 
-case(funct3) 
-B_BEQ : taken = (opr_a == opr_b);
-B_BNE : taken = (opr_a != opr_b);
-B_BLT : taken = (a_signed < b_signed);  
-B_BGE : taken = (a_signed >= b_signed);
-B_BLTU : taken = (opr_a < opr_b);
-B_BGEU : taken = (opr_a >= opr_b);
-default: taken = 1'b0;
+case(alu_op)
+ADD : alu_res = alu_a +alu_b;
+SUB :alu_res = alu_a - alu_b;
+
+SLL :alu_res = alu_a << alu_b[4:0];
+SRL :alu_res = alu_a >> alu_b[4:0];
+SRA :alu_res = signed_a >>> alu_b[4:0];
+
+XOR :alu_res = alu_a ^ alu_b;
+OR :alu_res = alu_a | alu_b;
+AND :alu_res = alu_a & alu_b;
+
+SLTU : alu_res = (alu_a < alu_b) ? 32'd1 : 32'd0;
+SLT :alu_res = (signed_a < signed_b) ? 32'd1 : 32'd0;
+default: alu_res = 32'd0;
 endcase
 end
-assign branch_taken = is_b_type & taken;
 endmodule
