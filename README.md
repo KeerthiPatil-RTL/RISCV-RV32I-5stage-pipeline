@@ -53,6 +53,14 @@ RTL Module <a href = "DATA_MEMORY/DATA_MEMORY.sv"> Data_Memory.sv </a>
 Block Diagram <a href = "DATA_MEMORY/DATA_,MEMORY_BLOCK.png"> Data_Memory_block </a>       
 Internal Architecture <a href = "DATA_MEMORY/DATA_,MEMORY_UNIT.png"> Data_Memory_unit </a>    
 
+------------------------------------------------------------------------------------------------------------------   
+
+### Branch Control
+RTL Module <a href = "BRANCH_CONTROL/BRANCH_CONTROL.sv"> Branch_Control.sv </a>        
+Block Diagram <a href = "BRANCH_CONTROL/BRANCH_CONTROL_BLOCK.png"> Branch_Control_block </a>       
+Internal Architecture <a href = "BRANCH_CONTROL/BRANCH_CONTROL_UNIT.png"> Branch_Control_unit </a>    
+
+  
 - Control Unit (opcode, funct3, funct7 decoding)
 32 × 32 Register File      
 - Immediate Generator
